@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/consitant.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        section {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            background: linear-gradient(to bottom right, #ff99001a, #ff990017, #ff990037);
+        }
+
+        section form {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: #fff;
+            box-shadow: 0 5px 20px #aeaeae;
+            padding: 25px;
+            gap: 16px;
+            border-radius: 30px;
+        }
+
+        section form h1 {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        section form label {
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            color: var(--secondary);
+        }
+
+        section form label::first-letter {
+            text-transform: uppercase;
+        }
+
+        section form input,section form button {
+            font-size: 15px;
+            padding: 12px;
+            outline: none;
+            border-radius: 13px;
+            border: 1px solid #ccc;
+            background-color: transparent;
+        }
+
+        .password {
+            display: flex;
+            border-radius: 13px;
+            border: 1px solid #ccc;
+        }
+
+        .password input {
+            flex-grow: 1;
+            border: none;
+        }
+
+        .showPassword {
+            width: 55px;
+            max-width: 55px;
+            height: 43px;
+            max-height: 43px;
+            border-radius: 13px;
+            display: grid;
+            place-content: center;
+            text-transform: capitalize;
+            font-size: 12px;
+            letter-spacing: .5px;
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        section form button {
+            text-transform: capitalize;
+            letter-spacing: .5px;
+            border: none;
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .2s ease;
+            background: linear-gradient(to right, var(--primary) 10%, #d47f00 80%);
+        }
+
+        section form button:hover {
+            background: linear-gradient(to right, #d47f00, var(--primary));
+        }
+
+        .rememberMe_forgotPassword {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rememberMe_forgotPassword label {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .rememberMe_forgotPassword a {
+            color: var(--secondary);
+            transition: .2s ease;
+        }
+
+        .rememberMe_forgotPassword a:hover {
+            color: var(--primary);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><img src="images/uni market logo.png" alt="uni market logo"></a>
+        <div class="togle_nav_cover"></div>
+        <div class="nav_links">
+            <a href="">home</a>
+            <a href="">products</a>
+            <a href="">agents</a>
+            <a href="">about</a>
+            <a href="">help</a>
+        </div>
+        <div class="login_and_menu">
+            <a href="">login</a>
+            <img class="menu" src="images/burger-bar.png" alt="menu">
+        </div>
+    </header>
+    <section>
+        <form action="">
+            <h1>Login to your account</h1>
+            <label for="">email</label>
+            <input type="text" name="" id="" placeholder="name@example.com">
+            <!-- <li class="form_error">Invalide email</li> -->
+            <label for="">password</label>
+            <div class="password">
+                <input type="password" name="" id="" placeholder="your password">
+                <div class="showPassword">show</div>
+            </div>
+            <div class="rememberMe_forgotPassword">
+                <input id="rememberMe" type="checkbox">
+                <label for="rememberMe">Remember me</label>
+                <a href="">Forgot password?</a>
+            </div>
+            <button>login</button>
+        </form>
+    </section>
+    <script src="js/header.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
